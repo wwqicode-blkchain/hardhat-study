@@ -15,8 +15,11 @@ module.exports = {
   solidity: "0.8.19",
   networks: {
     mantletest: {
-      url: `https://eth-goerli.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
-      accounts: [MANTLETEST_PRIVATE_KEY]
+      chainId: 5001,
+      url: 'https://rpc.testnet.mantle.xyz',
+      accounts: [
+        'a4b648aa2c9ba1369817ca16cd6eaaead9c2afb17360dbbca2e24b839d080703',
+      ],
     }
   }
 };
